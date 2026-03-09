@@ -42,8 +42,8 @@ body {
     border-radius: 4px;
 }
 .Sign a:hover{
-  color: #ff9e03;   /* golden hover */
-    transform: scale(1.2);   
+  color: #ff9e03;   
+  transform: scale(1.2);   
 }
 
 /* SOCIAL ICONS */
@@ -118,7 +118,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* Image */
+/* About Image */
 .item{
     display: flex;
     justify-content: center;
@@ -139,28 +139,107 @@ body {
     font-size: 20px;
     border-radius: 4px;
 }
-/*Menu */
+/*Menu heading */
 .section {
-    padding: 70px 20%;
-    text-align: center;
-    font-size:larger;
-}
-.menu-grid {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+   text-align: center;
+    padding: 30px 20px;  
+    width: 60%;       
+    margin: 40px auto;    
+    background-color: #f2dbc3;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     background: url("https://wallpapercave.com/wp/wp4104113.jpg") center center / cover;
+    
+}
+.section:hover {
+    transform: translateY(-5px);
+}
+/*Fav menu*/
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    width: 80%;
+    margin: auto;
 }
 .item-card {
     width: 300px;
     border: 2px solid #eee;
     padding: 40px;
-    border-radius: 10px;
+    border-radius: 20px;
+    background-color: #e5d7c7;
 }
 
 .item-card img {
-    width: 110%;
+width: 250px;
+    height: 160px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.item-card:hover{
+    transform: translateY(-6px);
+}
+.menu-section{
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f5eee6;
+}
+
+.menu-section h2{
+    font-size: 32px;
+    color: #5a3e2b;
+    margin-bottom: 10px;
+}
+
+.menu-subtitle{
+    color: #7a5a45;
+    margin-bottom: 40px;
+}
+
+/* Menu grid layout */
+.menu-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    width: 80%;
+    margin: auto;
+}
+.menu-item{
+    background: #e5d7c7;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.menu-item:hover{
+    transform: translateY(-6px);
+}
+/* Menu item card */
+.menu-item img{
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
     border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.menu-item h3{
+    color: #523829;
+    margin: 10px 0;
+}
+
+.menu-item p{
+    font-size: 16px;
+    color: #3f2f25;
+}
+
+.menu-item span{
+    display: block;
+    margin-top: 8px;
+    font-weight: bold;
+    color: #5a3e2b;
 }
 /* Review     */
 .review {
