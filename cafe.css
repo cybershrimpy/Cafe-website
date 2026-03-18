@@ -1,4 +1,3 @@
-/* GLOBAL */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -45,8 +44,16 @@ body {
   color: #ff9e03;   
   transform: scale(1.2);   
 }
+.main {
+    padding: 12px 28px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 4px;
+    background: #000;
+}
 
-/* SOCIAL ICONS */
+/*  ICONS */
 .social-icons {
     display: flex;
     gap: 15px;
@@ -65,7 +72,7 @@ body {
 /* Home */
 .Home {
     height: 90vh;
-   background: url("https://wallpapercave.com/wp/wp4104113.jpg") center center / cover;
+    background: url("https://wallpapercave.com/wp/wp4104113.jpg") center center / cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,26 +91,19 @@ body {
 }
 /* About */
 .about {
-    margin: 40px auto;
-    width: 55%;
-    padding: 30px;
-    background-color: #f2dbc3; 
-    border-radius: 12px;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    margin: 40px auto; 
+    width: 75%; 
+    padding: 30px; 
+    border-radius: 12px; 
+    box-shadow: 0 6px 12px rgba(5, 5, 5, 0);  
     text-align: center;
+    background-color: bisque;
+   
 }
-
 .about h2{
     color: #5a3e2b;
     font-size: 30px;
     margin-bottom: 15px;
-}
-
-.about p{
-    color: #3f2f25;
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 20px;
 }
 
 .about h3 {
@@ -131,15 +131,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
-.main {
-    padding: 12px 28px;
-    background: #000;
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    border-radius: 4px;
-}
-/*Menu heading */
+
 .section {
    text-align: center;
     padding: 30px 20px;  
@@ -148,8 +140,7 @@ body {
     background-color: #f2dbc3;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    background: url("https://wallpapercave.com/wp/wp4104113.jpg") center center / cover;
-    
+     background: url("https://wallpapercave.com/wp/wp4104113.jpg") center center / cover;
 }
 .section:hover {
     transform: translateY(-5px);
@@ -197,7 +188,7 @@ width: 250px;
     margin-bottom: 40px;
 }
 
-/* Menu grid layout */
+/* Menu container*/
 .menu-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -216,7 +207,7 @@ width: 250px;
 .menu-item:hover{
     transform: translateY(-6px);
 }
-/* Menu item card */
+/* Menu item Box */
 .menu-item img{
     width: 200px;
     height: 150px;
@@ -241,7 +232,7 @@ width: 250px;
     font-weight: bold;
     color: #5a3e2b;
 }
-/* Review     */
+/* Review   */
 .review {
     text-align: center;
     padding: 60px 20px 30px;
@@ -268,7 +259,7 @@ width: 250px;
     background-color: #fdf8f3;
 }
 
-/* REVIEW CARD */
+/* REVIEW Box*/
 .review {
     background: white;
     width: 280px;
@@ -339,7 +330,7 @@ width: 250px;
     color: #ffb703;
 }
 
-/* FORM INPUTS */
+/* FORM */
 .review-form input,
 .review-form textarea {
     width: 100%;
